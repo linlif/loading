@@ -51,6 +51,6 @@ https://linlif.github.io/loading/demo4.html
 **缺点：** 进度是根据图片的加载进度来反映的，如果网站中不是图片占主导，就不是很准确。但已经是比较好的方法 了，进度条嘛，给大家打发时间的~~
 
 **效果：** 
-https://linlif.github.io/loading/demo1.html
+https://linlif.github.io/loading/demo5.html
 
 
