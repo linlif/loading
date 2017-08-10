@@ -1,0 +1,131 @@
+
+<!--
+CSS3进度条动画制作
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo3</title>
+  <style media="screen">
+  html,body{
+    margin: 0;
+    padding: 0;
+  }
+  img{
+    width: 100%;
+  }
+  .loading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+  }
+  .pic{
+    /*border: 1px solid #666;*/
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .loading .pic i{
+    border-radius: 5px;
+    display: block;
+    background-color: #399;
+    float: left;
+    width: 4px;
+    height: 50px;
+    margin-right: 4px;
+    -webkit-transform: scaleY(0.4);
+        -ms-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+    -webkit-animation: load 1.2s infinite;
+            animation: load 1.2s infinite;
+  }
+
+  .loading .pic i:nth-child(1){-webkit-animation-delay: 0.1s;animation-delay: 0.1s}
+  .loading .pic i:nth-child(2){-webkit-animation-delay: 0.2s;animation-delay: 0.2s}
+  .loading .pic i:nth-child(3){-webkit-animation-delay: 0.3s;animation-delay: 0.3s}
+  .loading .pic i:nth-child(4){-webkit-animation-delay: 0.4s;animation-delay: 0.4s}
+  .loading .pic i:nth-child(5){-webkit-animation-delay: 0.5s;animation-delay: 0.5s}
+
+  @-webkit-keyframes load {
+    0%,60%,100% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+    }
+    20%{
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+
+  @keyframes load {
+    0%,60%,100% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+    }
+    20%{
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <!-- loading动画 -->
+  <div class="loading">
+    <div class="pic">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+  </div>
+
+  <img src="http://www.wesdom.me/img/page1-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page2-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page3-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page4-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page6-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page7-bg.jpg" alt="">l
+  <img src="http://www.wesdom.me/img/page8-bg.jpg" alt="">l
+  <img src="http://www.wesdom.me/img/page9-bg.jpg" alt="">l
+  <img src="https://cdn.pixabay.com/photo/2017/07/23/11/46/waterfall-2531194_1280.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/429_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/428_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/426_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/424_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/427_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/422_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/420_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/421_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/416_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/417_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/414_1.jpg" alt="">
+  <img src="https://cdn.pixabay.com/photo/2017/07/15/13/21/lotus-flower-2506451__480.jpg" alt="">
+  <img src="https://cdn.pixabay.com/photo/2017/08/01/22/38/flash-2568381__480.jpg" alt="">
+  <img src="https://cdn.pixabay.com/photo/2017/06/19/07/12/water-lily-2418338__480.jpg" alt="">
+
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      document.onreadystatechange = function(){
+        if(document.readyState == 'complete'){
+          $('.loading').fadeOut('fast');
+        };
+      };
+    });
+  </script>
+</body>
+</html>

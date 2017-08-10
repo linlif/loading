@@ -1,0 +1,97 @@
+
+<!--
+定位在头部的loading动画
+将script插入到html文档的不同位置，并设置进度条的进度即可。基本原理是：浏览器执行代码是从上到下运行的。
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo4</title>
+  <style media="screen">
+  html,body{
+    margin: 0;
+    padding: 0;
+  }
+  img{
+    width: 100%;
+  }
+  .loading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+  }
+  .loading .pic{
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    background-color: #399;
+  }
+  </style>
+
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <!-- loading动画 -->
+  <div class="loading">
+    <div class="pic">
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $('.loading .pic').animate({width:'10%'}, 100);
+  </script>
+
+  <header>
+    <img src="http://www.wesdom.me/img/page1-bg.jpg" alt="">
+    <img src="http://www.wesdom.me/img/page2-bg.jpg" alt="">
+    <img src="http://www.wesdom.me/img/page3-bg.jpg" alt="">
+    <img src="http://www.wesdom.me/img/page4-bg.jpg" alt="">
+    <img src="http://www.wesdom.me/img/page6-bg.jpg" alt="">
+    <img src="http://www.wesdom.me/img/page7-bg.jpg" alt="">
+    <img src="http://www.wesdom.me/img/page8-bg.jpg" alt="">
+    <img src="http://www.wesdom.me/img/page9-bg.jpg" alt="">
+  </header>
+
+  <script type="text/javascript">
+    $('.loading .pic').animate({width:'50%'}, 100);
+  </script>
+
+  <section>
+    <img src="https://cdn.pixabay.com/photo/2017/07/23/11/46/waterfall-2531194_1280.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/429_1.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/428_1.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/426_1.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/424_1.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/427_1.jpg" alt="">
+  </section>
+
+  <script type="text/javascript">
+    $('.loading .pic').animate({width:'80%'}, 100);
+  </script>
+
+  <section>
+    <img src="http://www.gratisography.com/pictures/422_1.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/420_1.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/421_1.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/416_1.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/417_1.jpg" alt="">
+    <img src="http://www.gratisography.com/pictures/414_1.jpg" alt="">
+    <img src="https://cdn.pixabay.com/photo/2017/07/15/13/21/lotus-flower-2506451__480.jpg" alt="">
+    <img src="https://cdn.pixabay.com/photo/2017/08/01/22/38/flash-2568381__480.jpg" alt="">
+    <img src="https://cdn.pixabay.com/photo/2017/06/19/07/12/water-lily-2418338__480.jpg" alt="">
+  </section>
+
+  <script type="text/javascript">
+    $('.loading .pic').animate({width:'100%'}, 100,function(){
+      $('.loading').fadeOut();
+    });
+  </script>
+
+</body>
+</html>

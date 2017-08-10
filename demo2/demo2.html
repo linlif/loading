@@ -1,0 +1,85 @@
+
+<!--
+通过加载状态事件制作进度条"进度条
+onreadystatechange = function(){
+  if(document.readyState == "complete"){...}
+}
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo2</title>
+  <style media="screen">
+    html,body{
+      margin: 0;
+      padding: 0;
+    }
+    img{
+      width: 100%;
+    }
+    .loading{
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+    }
+    .pic{
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      background: url('Spinner.gif');
+    }
+  </style>
+</head>
+<body>
+  <!-- loading动画 -->
+  <div class="loading">
+    <div class="pic"></div>
+  </div>
+
+  <img src="http://www.wesdom.me/img/page1-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page2-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page3-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page4-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page6-bg.jpg" alt="">
+  <img src="http://www.wesdom.me/img/page7-bg.jpg" alt="">l
+  <img src="http://www.wesdom.me/img/page8-bg.jpg" alt="">l
+  <img src="http://www.wesdom.me/img/page9-bg.jpg" alt="">l
+  <img src="https://cdn.pixabay.com/photo/2017/07/23/11/46/waterfall-2531194_1280.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/429_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/428_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/426_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/424_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/427_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/422_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/420_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/421_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/416_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/417_1.jpg" alt="">
+  <img src="http://www.gratisography.com/pictures/414_1.jpg" alt="">
+  <img src="https://cdn.pixabay.com/photo/2017/07/15/13/21/lotus-flower-2506451__480.jpg" alt="">
+  <img src="https://cdn.pixabay.com/photo/2017/08/01/22/38/flash-2568381__480.jpg" alt="">
+  <img src="https://cdn.pixabay.com/photo/2017/06/19/07/12/water-lily-2418338__480.jpg" alt="">
+
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      document.onreadystatechange = function(){
+        if(document.readyState == 'complete'){
+          $('.loading').fadeOut('fast');
+        };
+      };
+    });
+  </script>
+</body>
+</html>
