@@ -8,7 +8,7 @@
 
 **效果：**
 
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fies7ynm0ng30ao05twuk.gif)
+https://linlif.github.io/loading/demo1.html
 
 <br>
 
@@ -18,7 +18,7 @@
 **缺点：** 不能实时反映加载进度
 
 **效果：**
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fies84hh9ag30a604rtb5.gif)
+https://linlif.github.io/loading/demo2.html
 
 <br>
 
@@ -28,7 +28,8 @@
 **缺点：** 不能实时反映加载进度
 
 **效果：**
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fies8dzugeg308c04n75o.gif)
+
+https://linlif.github.io/loading/demo3.html
 
 <br>
 
@@ -40,7 +41,7 @@
 **缺点：** 在html中插入多处脚本，容易导致html文档的紊乱，结构不清晰。
 
 **效果：** 
-![](https://ws3.sinaimg.cn/large/006tNc79gy1fies8mcgx3g30av061q8i.gif)
+https://linlif.github.io/loading/demo4.html
 
 <br>
 
@@ -50,6 +51,6 @@
 **缺点：** 进度是根据图片的加载进度来反映的，如果网站中不是图片占主导，就不是很准确。但已经是比较好的方法 了，进度条嘛，给大家打发时间的~~
 
 **效果：** 
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fies8ywl32g307x048k14.gif)
+https://linlif.github.io/loading/demo1.html
 
 
